@@ -6,12 +6,11 @@ module.exports = {
   devtool: "inline-sourcemap",
   entry: "./index.js",
   output: {
-    path: __dirname + "/js",
-    filename: "scripts.min.js"
+    path: __dirname + "/target/webroot",
+    filename: "bundle.js"
   },
   plugins: [
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
   ],
 };

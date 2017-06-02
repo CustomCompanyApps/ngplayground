@@ -4,7 +4,8 @@
   "description": "project tutorial for web apps.",
   "main": "src/index.js",
   "scripts": {
-    "dev": "none"
+    "build": "webpack",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/CustomCompanyApps/ngplayground#readme",
   "devDependencies": {
+    "npm-install-webpack-plugin": "^4.0.4",
+    "require": "^2.4.20",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }
